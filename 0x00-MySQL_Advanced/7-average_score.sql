@@ -12,7 +12,7 @@ FROM (SELECT score FROM corrections WHERE user_id = input_user_id) AS subquery;
 
 UPDATE users 
 SET average_score = Avg_Score 
-WHERE id = user_id;
+WHERE users.id = input_user_id;
 
 END //
 DELIMITER ;
