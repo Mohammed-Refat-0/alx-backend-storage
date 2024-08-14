@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-''' data_cacher module: tools for request caching and tracking.
+'''data_cacher module - tools for request caching and tracking.
 '''
+
 import redis
 import requests
 from functools import wraps
@@ -8,7 +9,7 @@ from typing import Callable
 
 
 redis_store = redis.Redis()
-'''Module-level Redis instance.
+'''Module-level Redis instance
 '''
 
 
